@@ -1,10 +1,10 @@
-import Board from './components/board/Board';
+import Game from './components/game/Game';
 
 function App() {
     return (
         <div className='container'>
-            <h3>Tic-Tac-Toe Web App</h3>
-            <Board />
+            <h3 className='my-5 text-center'>Tic-Tac-Toe Web App</h3>
+            <Game />
         </div>
     );
 }
