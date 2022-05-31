@@ -1,0 +1,18 @@
+.square {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-top: -1px;
+    margin-right: -1px;
+    border: 1px solid #8c8c8c;
+    background: #ffffff;
+}
+
+.square:disabled {
+    color: #000000;
+    cursor: not-allowed;
+}
