@@ -20,25 +20,18 @@ const Board = (props) => {
         );
     };
 
-    return (
-        <>
-            <div className='row d-flex justify-content-center'>
-                {renderSquare(0)}
-                {renderSquare(1)}
-                {renderSquare(2)}
+    let rows = [];
+    for (let i = 0; i < 3; i++) {
+        rows.push(
+            <div key={i} className='row d-flex justify-content-center'>
+                {renderSquare(i * 3)}
+                {renderSquare(i * 3 + 1)}
+                {renderSquare(i * 3 + 2)}
             </div>
-            <div className='row d-flex justify-content-center'>
-                {renderSquare(3)}
-                {renderSquare(4)}
-                {renderSquare(5)}
-            </div>
-            <div className='row d-flex justify-content-center'>
-                {renderSquare(6)}
-                {renderSquare(7)}
-                {renderSquare(8)}
-            </div>
-        </>
-    );
+        );
+    }
+
+    return <>{rows}</>;
 };
 
 export default Board;
